@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>My Awsome Website</title>
+    <link rel="shortcut icon" href="./images/Favicon/favicon.jpg.ico" type="image/x-icon">
+    <title>Saksham Gupta</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>         
 <body>
     <header>
@@ -15,7 +18,7 @@
             <nav class="flex items-centre justify-between">
                 <div class="left flex items-centre">
                     <div class="branding">
-                        <img src="./images/logo.svg" alt="">
+                        <img class="logo" src="./images/Logo/SakshamLogo.png" alt="">
                     </div>
                     <div>
                         <a href="">Home</a>
@@ -26,17 +29,19 @@
                     </div>
                 </div>
                 <div class="right">
-                    <a href="mailto:guptasaksham795@gmail.com"><button class="btn btn-primary">Contact</button></a>
+                    <a href="mailto:guptasaksham795@gmail.com" target="_blank"><button class="btn btn-primary">Contact</button></a>
                 </div>
             </nav>
             <div class="hero flex items-centre justify-between">
                 <div class="left flex-1 flex justify-centre">
-                    <img src="./images/man.png" alt="">
+                    <img src="./images/header/MyHeaderImg.png" alt="">
                 </div>
                 <div class="right flex-1">
                     <h6>Saksham Gupta</h6>
-                    <h1>I'm Creative <span>Designer</span></h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fuga ullam qui quidem reiciendis ducimus aliquam dicta blanditiis tempore maiores.</p>
+                    <h1>I'm Web <span>Developer</span></h1>
+                    <p>Crafting elegant and responsive websites with a focus on user experience and performance.
+                    <br>    
+                    Turning ideas into interactive digital experiences. Let's build something amazing together.</p>
                     <div>
                         <button class="btn btn-secondary" onclick="window.open('shrutigupta.pdf','_blank')">Download CV</button>
                     </div>
@@ -48,14 +53,23 @@
     <section class="about">
         <div class="container flex items-centre">
             <div class="flex-1">
-                <img class="about-me-img" src="./images/me.jpg" alt="">
+                <img class="about-me-img" src="./images/about/AboutMe.png   " alt="AboutMeImg">
             </div>
             <div class="about-me flex-1">
                 <h1>About <span>Me</span></h1>
                 <h3>Hello! i'm Saksham Gupta.</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus, maxime dignissimos veritatis, repudiandae eligendi voluptas dolore nam iusto delectus minima ducimus eos perspiciatis blanditiis!</p>
-                <br>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestiae eum error dicta doloremque nam. </p>
+                <p>I have hands-on experience with various programming languages and frameworks, including:
+                    <br>
+                    - **Languages:** HTML, CSS, JavaScript, C++
+                    <br>
+                    - **Tools:** Git, VS Code, Turbo
+                    <br>
+                    During my time at university, I honed my skills in HTML, CSS, and JavaScript, working on various projects that allowed me to apply my knowledge practically.
+                    <br>
+                    When I'm not coding, you can find me exploring new tech trends, playing video games. I'm always eager to learn new things and take on challenges that push me to grow both personally and professionally.
+                    <br>
+                    Looking forward to connecting with you!</p>
+    
                 <div class="social">
                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook img"></i></a>
                     <a href="https://www.x.com/" target="_blank"><i class="fa-brands fa-twitter img"></i></a>
@@ -69,19 +83,18 @@
 
     <section class="services">
         <div class="container">
-            <h1 class="section-heading"><span>Our </span>Services</h1>
+            <h1 class="section-heading"><span>My </span>Projects</h1>
             <p>We provide high standard clean website for your business solutions</p>
             <div class="card-wrapper">
                 <div class="card">
-                    <img src="./images/brush.svg" alt="">
-                    <h2>Graphic Design</h2>
-                    <p>There are many variations of passages of but the majority have suffered alteration in some
-                        form.
+                   <a href="https://sakshamgupta13.github.io/Amazon-Clone/" target="_blank"><img src="./images/Project/AmazonClone.png" alt=""></a> 
+                    <h2>Amazon Clone</h2>
+                    <p>An Amazon clone website to demonstrate my skills in full-stack web development. This project replicates the core functionalities of the popular e-commerce platform, showcasing my ability to build robust, user-friendly web applications.
                     </p>
                 </div>
                 <div class="card">
-                    <img src="./images/code.svg" alt="">
-                    <h2>Web Development</h2>
+                    <a href="https://sakshamgupta13.github.io/Portfolio-Web/" target="_blank"> <img src="./images/Project/PortfolioWeb.png" alt=""> </a>
+                    <h2>Portfolio Website</h2>
                     <p>There are many variations of passages of but the majority have suffered alteration in some
                         form.
                     </p>
@@ -117,47 +130,52 @@
             </div>
         </div>
     </section>
-    <!-- <section class="freelancer">
+   <section class="freelancer">
         <h1>I Am Available For Freelancer.</h1>
-        <p>We provide high standar clean website for your business solutions</p>
-        <button class="btn btn-primary">Download CV</button>
+        <p>I provide high standar clean website for your business solutions</p>
+        <button class="btn btn-primary" onclick="window.open('shrutigupta.pdf','_blank')">Download CV</button>
     </section>
-    <section class="reviews">
+
+     <section class="reviews">
         <div class="container">
-            <h1 class="section-heading"><span>Our</span> Client</h1>
-            <p>We provide high standar clean website for your business solutions</p>
+            <h1 class="section-heading"><span>Endorsements</span></h1>
+            <p>NICE THINGS PEOPLE HAVE SAID ABOUT ME</p>
             <div class="slider">
                 <div class="slide">
-                    <img src="./images/lady.png" alt="">
+                    <img src="./images/Endoursements/Priya.png" alt="">
                     <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                         mollit anim id est laborum"</p>
-                    <span>- John Doel, Company ABC</span>
+                    <span>- Priya Gupta , Sanjeevni Dairy Farms</span>
                 </div>
                 <div class="slide">
-                    <img src="./images/lady.png" alt="">
+                    <img src="./images/Endoursements/Nitika.png" alt="">
                     <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                         mollit anim id est laborum"</p>
-                    <span>- John Doel, Company ABC</span>
+                    <span>- Nitika Gupta , Ebixcash</span>
                 </div>
                 <div class="slide">
+                    <img src="./images/Endoursements/Shruti.png" alt="">
+                    <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum"</p>
+                    <span>- Shruti Gupta, Company ABC</span>
+                </div>
+                <!-- <div class="slide">
                     <img src="./images/lady.png" alt="">
                     <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                         mollit anim id est laborum"</p>
                     <span>- John Doel, Company ABC</span>
-                </div>
-                <div class="slide">
-                    <img src="./images/lady.png" alt="">
-                    <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum"</p>
-                    <span>- John Doel, Company ABC</span>
-                </div>
+                </div> -->
             </div>
             <div class="slider-dots"></div>
         </div>
-    </section> -->
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>

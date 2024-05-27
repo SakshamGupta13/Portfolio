@@ -16,6 +16,10 @@ body{
     box-sizing: border-box;
     /* -webkit-font-smoothing:antialiased; */
 }
+.logo{
+    height: 80px;
+    width: 100%;
+}
 header{
     background-color: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
@@ -43,20 +47,19 @@ header nav{
     padding: 2rem 0;
 }
 
-header nav .branding{
-    margin-right: 3rem;
-}
-
 .hero{
     padding: 3rem 0;
+    height: 890px;    /**/
 }
 
 .hero .left img{
     width: 400px;
+    margin-bottom: 7rem;
 }
 
 .hero .right{
     color: var(--pure);
+    margin-bottom: 17rem;
 }
 
 .hero .right h6{
@@ -72,17 +75,13 @@ header nav .branding{
     margin-bottom: 2rem;
 }
 
-.hero .right h1 span{
+span{
     color: var(--primary);
 }
 
 .hero .right p{
     line-height: 1.9;
-    margin-bottom: 2rem;
-}
-
-.hero .right{
-    margin-top: -7rem;
+    margin-bottom: 3rem;  
 }
 
 section{
@@ -91,16 +90,13 @@ section{
 
 section .about-me-img{
     height: 450px;
+    margin-left: 4rem;
 }
 
 .about-me h1{
     margin-bottom: 1rem;
     font-size: 1.8rem;
     font-weight: 400;
-}
-
-.about-me h1 span{
-    color: var(--primary);
 }
 
 .about-me h3{
@@ -151,10 +147,6 @@ section .about-me-img{
     line-height: 0.5;
 }
 
-.section-heading span{
-    color: var(--primary);
-}
-
 section h1{
     font-size: 1.8rem;
 }
@@ -184,13 +176,17 @@ section.services .card-wrapper .card{
     position: relative;
     padding-top: 5rem;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 section.services .card-wrapper .card img{
     position: absolute;
     top: -3.5rem;
-    left: 34.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 100px;
+    object-fit: contain;
 }
 
 section.services .card-wrapper .card h2{
@@ -215,4 +211,82 @@ section.services .card-wrapper .card:hover h2{
 
 section.services .card-wrapper .card:hover p{
     color: var(--pure);
+}
+
+section.freelancer{
+    text-align: center;
+    color: var(--pure);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 12rem;
+}
+
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+section.freelancer p{
+    margin-top: 1.8rem;
+    margin-bottom: 4rem;
+    font-family: 'Lato',sans-serif;
+}
+
+section.reviews .slider{
+    margin-top: -1.5rem;
+}
+
+section.reviews .slider .slide img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+section.reviews .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 8rem;
+}
+
+section.reviews .slider .slide p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+section.reviews .slider .slide span{
+    font-size: 1rem;
+}
+
+section.reviews .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+section.reviews .slider-dots{
+    margin-top: 3rem;
+}
+
+section.reviews .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+section.reviews .dots li.slick-active button{
+    background: var(--primary);
+    width: 20px;
+    height: 5px;
 }
