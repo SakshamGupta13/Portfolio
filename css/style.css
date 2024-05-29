@@ -300,7 +300,7 @@ section.work .card-wrapper{
 
 section.work .card-wrapper .card{
     position:relative;
-    /* height:250px; */
+    height:250px;
 }
 
 section.work .card-wrapper .card .overlay{
