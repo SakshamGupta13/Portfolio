@@ -239,7 +239,7 @@ section.freelancer h1{
 }
 
 section.freelancer p{
-    margin-top: 1.8rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
     font-family: 'Lato',sans-serif;
 }
@@ -303,7 +303,7 @@ section.endorsements .dots li.slick-active button{
     height: 5px;
 }
 
-section.work .card-wrapper{
+/* section.work .card-wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 2rem;
@@ -345,9 +345,9 @@ section.work .card-wrapper .card .overlay a{
 section.work .card-wrapper .card img{
     height:100%;
     width:100%;
-}
+} */
 
-section.blog{
+/* section.blog{
     background: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
     padding-bottom: 12rem;
@@ -396,7 +396,7 @@ section.blog .card-wrapper .card .card-content p{
 }
 section.blog .card-wrapper .card .card-content a.read-more{
     font-size: 0.8rem;
-}
+} */
 
 section.contact .card-wrapper{
     display: grid;
