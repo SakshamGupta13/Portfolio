@@ -39,6 +39,30 @@ header{
     margin: auto;
 }
 
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1152px;
+    }
+  }
+
 .container nav{
     margin-bottom: 2.5rem;
 }
@@ -504,7 +528,146 @@ footer .copyright{
     margin-top: 2rem;
 }
 
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all .4s ease-in-out;
+}
 
 
+.open{
+    transform: translateX(0);
+}
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.times img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+
+.mobile-nav ul li a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.mobile-nav .logo{
+    height: 150px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+@media(max-width:1085px){     /*  tablet */
+    header #main-nav{
+        display: none;
+    }
+    .hamberger{
+        display: block;
+    }
+    .hero .left img{
+        width: 350px;
+    }
+    
+    .hero .right h1{
+        font-size: 3.5rem;
+    }
+    section .about-me-img {
+        height: 370px;
+        margin-left: 0rem;
+    }
+    section.project .card-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:576px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero .right{
+        position: absolute;
+        top: 260px;
+        padding: 0 1rem;
+    }
+    .hero .left{
+        margin-top: -5rem;
+        margin-right: -9rem;
+        padding-bottom: 4rem;
+    }
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 66% 94%, 0 100%);
+    }
+    .about-responsive{
+        flex-direction: column;
+    }
+    .about .center{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .about .center .social{
+        justify-content: center;
+    }
+    section{
+        padding: 3rem 0;
+    }
+    section.project .card-wrapper {
+        grid-template-columns: 1fr;
+    }
+    section.freelancer {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 90%, 0 100%);
+        padding-bottom: 7rem;
+    }
+    section.endorsements .slider .slide{
+        padding: 0;
+    }
+    .section-heading + p{
+        margin-bottom: 4rem;
+    }
+    section.contact .card-wrapper{
+        grid-template-columns: 1fr;
+    }
+    section.contact .card-wrapper .card img {
+        margin-top: -2rem;
+        margin-bottom: 0rem;
+        height: 133px;
+        width: 145px;
+    }
+}
 
 
