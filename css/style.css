@@ -201,7 +201,7 @@ section.project{
 
 section.project .card-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;   /* repeat(3 , 1fr); */
+    grid-template-columns: 1fr 1fr;   /* repeat(3 , 1fr); */
     grid-column-gap: 2rem;
     grid-row-gap: 6rem;
 }
@@ -424,8 +424,7 @@ section.blog .card-wrapper .card .card-content a.read-more{
 
 section.contact .card-wrapper{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 3rem;
+    grid-template-columns: repeat(2,1fr);
 }
 
 section.contact .card-wrapper .card{
@@ -468,6 +467,9 @@ section.contact .input-wrap-2 input{
     margin-bottom: 2rem;
 }
 
+section.contact .form{
+    margin-right: -35rem;
+}
 section.contact input{
     padding: 0.5rem;
     border: 1px solid var(--dark);
@@ -619,10 +621,14 @@ footer .copyright{
 @media(max-width:576px){
     .hero{
         flex-direction: column;
+        height: 720px;
+    }
+    .hero .left img {
+        width: 0;
     }
     .hero .right{
         position: absolute;
-        top: 260px;
+        top: 126px;
         padding: 0 1rem;
     }
     .hero .left{
@@ -667,6 +673,10 @@ footer .copyright{
         margin-bottom: 0rem;
         height: 133px;
         width: 145px;
+    }
+    
+    section.contact .input-wrap{
+        margin-top: 1rem;
     }
 }
 
