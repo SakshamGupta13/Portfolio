@@ -678,6 +678,9 @@ footer .copyright{
     section.contact .input-wrap{
         margin-top: 1rem;
     }
+    section.contact .form{
+        margin-right: 0rem;
+    }
 }
 
 
