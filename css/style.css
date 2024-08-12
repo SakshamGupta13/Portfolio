@@ -201,7 +201,7 @@ section.project{
 
 section.project .card-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;   /* repeat(3 , 1fr); */
+    grid-template-columns: 1fr;   /* repeat(3 , 1fr); */
     grid-column-gap: 2rem;
     grid-row-gap: 6rem;
 }
@@ -610,7 +610,7 @@ footer .copyright{
         margin-left: 0rem;
     }
     section.project .card-wrapper{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
