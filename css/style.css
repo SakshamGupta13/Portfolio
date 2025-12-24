@@ -184,7 +184,7 @@ section{
 .section-heading{
     color: var(--secondary);
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     line-height: 0.5;
 }
 
@@ -681,4 +681,10 @@ footer .copyright{
     }
 }
 
+.phone-link{
+    color: black;
+}
 
+.email-link{
+    color: black;
+}
