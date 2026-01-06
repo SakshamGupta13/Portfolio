@@ -474,19 +474,24 @@ section.contact .input-wrap-2 input{
     margin-bottom: 2rem;
 }
 section.contact input{
-    padding: 0.5rem;
+    padding: 1rem;
     border: 1px solid var(--dark);
     font-size: 0.8rem;
 }
 
 section.contact .input-wrap-2 textarea{
-    padding: 0.5rem;
+    padding: 1rem;
     border: 1px solid var(--dark);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 section.contact .input-wrap-2 textarea:focus , section.contact input:focus{
     outline: none;
+}
+
+.form{
+    width: 80%;
+    padding-left: 16rem;
 }
 
 section.contact .btn-wrapper{
@@ -497,6 +502,7 @@ section.contact .btn-wrapper{
 section.contact .btn-about{
     background-color: var(--primary);
     color: var(--secondary);
+    margin-top: 1.5rem;
 }
 
 section.contact .btn-about:hover{
@@ -620,6 +626,21 @@ footer .copyright{
     section.project .card-wrapper{
         grid-template-columns: 1fr;
     }
+    section.contact input{
+        padding: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    section.contact .input-wrap-2 textarea{
+        padding: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .form{
+        margin-top: 3rem;
+        width: 100%;
+        padding-left: 0rem;
+    }
 }
 
 @media(max-width:576px){
@@ -673,7 +694,7 @@ footer .copyright{
         grid-template-columns: 1fr;
     }
     section.contact .card-wrapper .card img {
-        margin-top: -2rem;
+        margin-top: 0rem;
         margin-bottom: 0rem;
         height: 133px;
         width: 145px;
@@ -681,6 +702,22 @@ footer .copyright{
     
     section.contact .input-wrap{
         margin-top: 1rem;
+    }
+
+    section.contact input{
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    section.contact .input-wrap-2 textarea{
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .form{
+        margin-top: 3rem;
+        width: 100%;
+        padding-left: 0rem;
     }
 }
 
